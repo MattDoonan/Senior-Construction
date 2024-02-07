@@ -1,0 +1,154 @@
+header
+  width: 100%
+  background-color: transparent
+  position: absolute
+  z-index: 10
+  border-bottom: 1px solid #FFFFFF
+  transition: background-color 1ms ease-in-out
+  transition-delay: 470ms
+
+header.black
+  background-color: white
+  border-bottom: 1px solid #000000
+  transition-delay: 0ms
+
+header .container
+  max-width: 1440px
+  padding: 23px 70px 21px
+  width: 100%
+  background-color: transparent
+  align-items: center
+  top: 0
+  flex-wrap: wrap
+
+header img
+  width: 124.96px
+  height: 46px
+  padding-right: 8.96px
+
+header button
+  border-radius: 21px
+  border: 1px solid rgba(255, 255, 255, 1)
+  color: #FFFFFF
+  width: 100px
+  height: 42px
+  background: none
+  overflow: hidden
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: background-color ease-in-out 400ms
+  transition-delay: 200ms
+
+header.black button
+  border: 1px solid rgb(0, 0, 0)
+  color: #000000
+  transition-delay: 0ms
+
+header button.active
+  background-color: black
+  color: #FFFFFF
+
+header.black a.large
+  text-decoration: none
+
+header a
+  color: #FFFFFF
+  transition: color 1ms ease-in-out
+  transition-delay: 400ms
+  text-decoration: none
+
+header.black a
+  color: #000000
+  transition-delay: 0ms
+
+header button span
+  position: absolute
+  animation: hide-text linear forwards 400ms
+  transform: translateY(-110%)
+
+header button span.active
+  animation: show-text linear forwards 1200ms
+  transform: translateY(0)
+
+@keyframes show-text
+  0%
+    transform: translateY(-110%)
+  33%
+    transform: translateY(-110%)
+  50%
+    transform: translateY(20%)
+  65%
+    transform: translateY(-30%)
+  80%
+    transform: translateY(10%)
+  90%
+    transform: translateY(-5%)
+  100%
+    transform: translateY(0)
+
+@keyframes hide-text
+  0%
+    transform: translateY(0)
+  100%
+    transform: translateY(110%)
+
+.popout
+  width: 100vw
+  background-color: #FFFFFF
+  z-index: 9
+  position: absolute
+  top: 0
+  transition: ease-in-out all 500ms
+  transform: translateY(-100%)
+
+.popout.active
+  transform: translateY(91px)
+
+nav
+  display: block
+  width: 100%
+  max-width: 1440px
+
+nav ul
+  display: inline-block
+  width: 50%
+  padding: 44px 70px 71px
+
+nav ul:last-child
+  border-left: 1px solid #000000
+
+nav ul a
+  color: #000000
+
+nav ul li
+  margin-top: 16px
+
+@media screen and (max-width: 719px)
+  header .container
+    padding: 22px 40px
+
+  nav ul
+    display: block
+    padding: 0
+    width: 100%
+
+  nav ul li
+    width: 100%
+    margin-top: 26px
+    text-align: center
+
+  nav
+    padding: 24px 20px 217px
+    height: 100vh
+
+  .popout
+    height: 100%
+
+  nav ul:last-child
+    border-left: none
+
+@media screen and (max-width: 439px)
+  header .container
+    padding: 22px 20px

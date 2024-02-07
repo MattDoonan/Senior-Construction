@@ -1,0 +1,46 @@
+.home-main-img
+  width: 100vw
+  height: 50vw
+  position: relative
+  background-image: url("/HomeImages/title.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+
+.image-tint
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  background-color: rgba(0, 0, 0, 0.3)
+
+.home-main-img .left-col
+  max-width: 1440px
+  width: 100%
+  justify-content: flex-end
+  padding: 0 70px
+  position: absolute
+  bottom: 8.33%
+
+.home-main-img h1
+  color: #FFFFFF
+  max-width: 730px
+
+@media screen and (max-width: 719px)
+  .home-main-img
+    background-image: url("/HomeImages/titleTablet.jpg")
+    height: 110vw
+
+  .home-main-img .left-col
+    padding: 0 40px
+
+@media screen and (max-width: 479px)
+  .home-main-img
+    background-image: url("/HomeImages/titlePhone.jpg")
+    height: 200vw
+
+  .home-main-img .left-col
+    padding: 0 20px
+
+  .home-main-img h1
+    max-width: 320px

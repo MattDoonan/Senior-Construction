@@ -1,0 +1,145 @@
+@import "text"
+@import "DefaultSass/nav"
+@import "DefaultSass/footer"
+@import "DefaultSass/title"
+@import "HomePageSass/home-image"
+@import "HomePageSass/home-about"
+@import "HomePageSass/home-projects"
+@import "ProjectsSass/projects-page"
+@import "ProjectsSass/project-individual-page"
+@import "OurPeopleSass/our-people"
+@import "WhatWeDoSass/wwd"
+@import "AccoladesSass/accolades"
+@import "TestimonialsSass/testimonials"
+@import "AboutSass/about"
+@import "ContactSass/contact"
+
+.home-main-img,
+header,
+.center-all
+  display: flex
+  justify-content: center
+  align-items: center
+
+#__nuxt,
+main,
+.title,
+.home-projects,
+.projects-content,
+.project-title,
+.project-images,
+.project-navigation,
+.our-people,
+.wwd,
+.accolades,
+.testimonials,
+footer,
+.about-black,
+.center-top-col
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+
+.project-text,
+.center-top-row
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: flex-start
+
+.center-bottom-row
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: flex-end
+
+.container,
+.home-about,
+.about-white,
+.contact,
+.space-between-row
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.right-col
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+
+.project,
+.left-col
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.left-row
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+
+.right-row
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+
+*
+  box-sizing: border-box
+
+body
+  font-family: 'neue-haas-grotesk-display', sans-serif
+  margin: 0
+  overflow-x: hidden
+
+#__nuxt
+  overflow-x: hidden
+
+button
+  cursor: pointer
+
+ul
+  display: block
+  list-style: none
+  margin: 0
+  padding: 0
+
+.small-item
+  display: none
+
+hr
+  opacity: 0.2
+  margin: 0
+  margin-block: 0
+  width: 100vw
+
+
+@media screen and (max-width: 719px)
+  .large-item
+    display: none !important
+
+  .small-item
+    display: block
+
+  .projects-content,
+  .home-projects .left-col,
+  .home-about
+    padding: 60px 40px
+
+
+  .title h1,
+  .project-title
+    padding: 150px 40px 60px
+
+@media screen and (max-width: 479px)
+  .projects-content,
+  .home-projects .left-col,
+  .home-about
+    padding: 60px 20px
+
+  section.full
+    padding: 0
+
+  .title h1,
+  .project-title
+    padding: 150px 20px 60px

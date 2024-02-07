@@ -1,0 +1,45 @@
+.statement h5
+  opacity: 0.5
+  margin: 6px 0 0 0
+
+.statement h4
+  white-space: pre-line
+
+.statement img
+  max-width: 23px
+  max-height: 20px
+  width: 100%
+  height: 100%
+  margin: 0 0 26px 0
+
+.statement .left-col:first-child
+  max-width: 420px
+  width: 100%
+
+.statement .left-col:last-child
+  max-width: 640px
+  width: 100%
+  margin: 0 110px 0 0
+
+.statement
+  width: 100vw
+  max-width: 1440px
+  padding: 60px 70px 80px
+
+@media screen and (max-width: 1439px)
+  .statement .left-col:last-child
+    margin: 0 40px 0 0
+
+@media screen and (max-width: 720px)
+  .statement
+    flex-direction: column !important
+    gap: 40px
+    padding: 60px 40px 80px
+
+  .statement img
+    max-width: 18px
+    max-height: 15.65px
+
+@media screen and (max-width: 479px)
+  .statement
+    padding: 60px 20px 80px

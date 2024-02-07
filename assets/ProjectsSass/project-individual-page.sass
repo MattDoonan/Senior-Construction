@@ -1,0 +1,160 @@
+.project-title
+  padding: 150px 70px 50px
+  max-width: 1440px
+  width: 100%
+  text-align: center
+
+.project-title h2
+  margin: 18px 0 60px
+
+.project-title h2,
+.project-title h3
+  max-width: 640px
+  width: 100%
+
+.project-title img
+  max-width: 1300px
+  max-height: 730px
+  width: 100%
+  height: 100%
+
+.project-text
+  max-width: 1440px
+  padding: 50px 90px 100px
+  width: 100%
+
+.project-text .content
+  color: #000000
+  max-width: 640px
+  width: 100%
+  white-space: pre-line
+  margin: 0 130px 0 0
+
+.project-text ul
+  max-width: 310px
+  width: 100%
+
+.project-text li
+  border-bottom: 1px solid black
+  list-style: none
+  padding-bottom: 16px
+  margin-top: 16px
+
+.project-text ul li:first-child
+  margin-top: 0
+
+.project-text li h5
+  margin: 0 0 6px 0
+  opacity: 0.5
+
+.project-images
+  gap: 100px
+  width: 100%
+  padding: 0 70px 100px
+
+.project-images img
+  max-width: 510px
+  max-height: 680px
+  width: 100%
+  height: 100%
+
+.project-images img:first-child
+  margin-right: 60px
+
+.project-images img.wide
+  max-width: 860px
+  max-height: 514px
+  width: 100%
+  height: 100%
+
+.project-images .center-top-row img:last-child
+  margin-top: 100px
+
+.project-navigation
+  width: 100vw
+  border-top: 1px solid #000000
+
+.project-navigation .space-between-row
+  padding: 60px 70px
+  width: 100vw
+  max-width: 1440px
+
+.project-navigation button
+  background: none
+  border: none
+
+.project-navigation button,
+.project-navigation button img
+  width: 46px
+  height: 46px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.project-navigation h3
+  opacity: 0.33
+
+.project-navigation h3.active
+  opacity: 1
+
+.project-navigation .left-row,
+.project-navigation .right-row
+  align-items: center
+  gap: 16px
+
+@media screen and (max-width: 1439px)
+  .project-images img:first-child
+    margin-right: 20px
+
+  .project-images
+    gap: 50px
+
+@media screen and (max-width: 1079px)
+  .project-text .content
+    margin: 0 70px 0 0
+
+  .project-images img
+    max-width: 320px
+    max-height: 426.67px
+
+  .project-images img.wide
+    max-width: 520px
+    max-height: 310.79px
+
+@media screen and (max-width: 719px)
+
+  .project-images .center-top-row img:last-child
+    margin-top: 20px
+
+  .project-images img:first-child
+    margin-right: 0
+
+  .project-images .center-top-row
+    flex-direction: column !important
+
+  .project-images
+    padding: 0 40px 60px
+
+  .project-text
+    flex-direction: column !important
+
+  .project-text .content
+    margin: 0 0 60px 0
+
+  .project-text
+    padding: 10px 60px 40px
+
+  .project-navigation .space-between-row
+    justify-content: center !important
+    gap: 40px
+
+@media screen and (max-width: 479px)
+  .project-title
+    text-align: left
+
+  .project-images
+    padding: 0 20px 60px
+
+  .project-text
+    padding: 0 35px 40px
+

@@ -1,0 +1,58 @@
+.wwd article
+  max-width: 1440px
+  padding: 20px 20px 100px 70px
+  width: 100vw
+
+.wwd article div
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: inherit
+  align-items: flex-start
+  max-height: 480px
+  margin: 20px 50px 0 0
+  max-width: 420px
+
+.wwd article img
+  width: 100%
+  height: 100%
+  max-width: 690px
+  max-height: 480px
+
+.wwd article h5
+  white-space: pre-line
+
+.wwd article h2
+  margin: 0 0 70px 0
+
+@media screen and (max-width: 1440px)
+  .wwd article img
+    max-width: 520px
+    max-height: 361.74px
+
+@media screen and (max-width: 1079px)
+  .wwd article div
+    margin: 0
+
+  .wwd article
+    flex-direction: column !important
+
+  .wwd article h5
+    margin: 0 0 40px 0
+
+  .wwd article
+    padding: 60px 70px 100px
+
+@media screen and (max-width: 719px)
+  .wwd article
+    padding: 60px 40px 100px
+
+@media screen and (max-width: 480px)
+  .wwd article
+    padding: 60px 20px 80px
+
+  .wwd article h2
+    margin: 0 0 40px 0
+
+  .wwd article h5
+    margin: 0 0 30px 0

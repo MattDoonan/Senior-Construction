@@ -1,0 +1,41 @@
+.home-about
+  max-width: 1440px
+  padding: 20px 70px 100px
+  width: 100%
+  align-items: flex-end
+  position: relative
+
+.home-about .fixed
+  position: absolute
+  top: 60px
+
+.home-about div
+  max-width: 304px
+  width: 100%
+  padding-top: 40px
+  gap: 20px
+
+.home-about img
+  max-width: 690px
+  max-height: 480px
+  width: 100%
+  height: 100%
+
+@media screen and (max-width: 1439px)
+  .home-about img
+    max-width: 520px
+    max-height: 361.74px
+
+@media screen and (max-width: 1079px)
+  .home-about img
+    max-width: 690px
+    max-height: 480px
+    margin-top: 80px
+
+  .home-about
+    flex-direction: column-reverse !important
+    align-items: flex-start
+
+@media screen and (max-width: 719px)
+  .home-about img
+    margin-top: 40px

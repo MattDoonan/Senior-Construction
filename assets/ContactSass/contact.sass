@@ -1,0 +1,102 @@
+.contact
+  width: 100vw
+  max-width: 1440px
+  padding: 60px 70px
+
+.contact .container
+  max-width: 420px
+  width: 100%
+
+.contact .container h5
+  opacity: 0.5
+
+.contact .container h3
+  margin: 10px 0 40px
+  white-space: pre-line
+
+.contact form
+  max-width: 640px
+  width: 100%
+
+.contact form textarea,
+.contact form input
+  width: 100%
+  outline: none
+  border: none
+  border-bottom: 1px solid black
+  background: none
+  padding: 10px 0
+
+.contact form .left-col
+  width: 100%
+
+.contact form textarea
+  height: 110px
+  max-width: 640px
+  width: 100%
+  margin: 0 0 40px
+
+.contact form .left-col label
+  opacity: 0.5
+
+.contact form .left-col:has(textarea:focus) label,
+.contact form .left-col:has(input:focus) label
+  opacity: 1
+
+.contact form .contact-fields
+  width: 100%
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-column-gap: 20px
+  grid-row-gap: 30px
+  margin: 40px 0 30px
+
+.contact form button
+  padding: 26px 70px
+  background-color: #000000
+  border: none
+  color: #FFFFFF
+
+.contact form button:hover
+  opacity: 0.8
+
+.map
+  max-width: 1440px
+  width: 100%
+  padding: 20px 70px 100px
+
+.map img
+  width: 100%
+  height: 100%
+
+@media screen and (max-width: 1439px)
+  .contact form textarea,
+  .contact form
+    max-width: 510px
+
+@media screen and (max-width: 1079px)
+  .contact
+    flex-direction: column-reverse !important
+    gap: 110px
+
+  .contact form textarea,
+  .contact form
+    max-width: 720px
+
+@media screen and (max-width: 719px)
+  .map
+    padding: 5px 40px 100px
+
+  .contact
+    padding: 60px 40px 10px
+
+@media screen and (max-width: 479px)
+  .map
+    padding: 5px 20px 100px
+
+  .contact
+    padding: 60px 20px 10px
+
+
+  .contact form .contact-fields
+    grid-template-columns: 1fr

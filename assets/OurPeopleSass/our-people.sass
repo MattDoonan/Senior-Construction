@@ -1,0 +1,72 @@
+.our-people
+  padding: 20px 0 100px
+
+.person
+  max-width: 1400px
+  width: 100%
+  padding: 60px 70px 0
+  transition: all ease-in-out 300ms
+
+.person img
+  max-height: 280px
+  height: 100%
+  max-width: 280px
+  width: 100%
+
+.person .left-col
+  margin: 30px 0 0 50px
+  max-width: 750px
+  height: 100%
+
+.person .grey
+  margin: 8px 0 20px
+  opacity: 0.5
+
+.person h5
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  overflow: hidden
+  -webkit-line-clamp: 4
+  white-space: pre-line
+
+.person h5.active
+  -webkit-line-clamp: inherit
+
+.person button
+  text-decoration: underline
+  border: 0
+  padding: 0
+  background: none
+  margin: 20px 0 30px
+
+@media screen and (max-width: 1079px)
+  .person img
+    max-height: 190px
+    max-width: 190px
+
+  .person .left-col
+    margin: 10px 0 0 30px
+
+  .person h5
+    -webkit-line-clamp: 4
+
+@media screen and (max-width: 719px)
+  .person
+    padding: 60px 40px 0
+    flex-direction: column !important
+    align-items: flex-start
+
+  .person .left-col
+    align-items: flex-start
+    margin: 40px 0
+
+  .person img
+    max-height: 320px
+    max-width: 320px
+
+  .person button
+    margin: 20px 0 0
+
+@media screen and (max-width: 480px)
+  .person
+    padding: 40px 20px 0
